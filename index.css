@@ -1,0 +1,592 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    font-size: 18px;
+    display: grid;
+    grid-gap: 15%;
+    grid-template-columns: 1fr 2fr;
+
+}
+.color-container img{
+    top:8%;
+    left: 10%;
+    position: absolute;
+}
+.color-container{
+    color: white;
+}
+
+.color-container .exp-date{
+    position: absolute;
+    top: 39%;
+    left: 38%;
+    font-size: 1rem;
+}
+.color-container .card-num{
+    position: absolute;
+    top: 30%;
+    font-size: 1.5rem;
+    left: 13%;
+}
+.color-container .card-name{
+    position: absolute;
+    top: 39%;
+    left: 13%;
+    font-size: 1rem;
+
+}
+.color-container .logo{
+   position: absolute;
+   top: 10%;
+   left: 11%;
+}
+.left-sec{
+    height: 100vh;
+    background: url("/images/bg-main-desktop.png");
+    background-repeat: no-repeat;
+}
+
+.bw-container img{
+    position: absolute;
+    top: 55%;
+    left: 17%;
+}
+.bw-container .cvc-holder{
+    position: absolute;
+    top: 71.5%;
+    color: white;
+    font-size: 1rem;
+    left: 44%;
+}
+.right-sec{
+    position: relative;
+    top: 20%;
+    display: block;
+    left: 35%;
+}
+form {
+    width: 100%;
+}
+form label{
+    text-transform: uppercase;
+    color: hsl(278, 68%, 11%);
+}
+.form-control{
+    width: 100%;
+    margin: 1% 0;
+}
+.form-control input{
+    width: 40%;
+    height: 5vh;
+    border-radius: 5px;
+    padding: 1%;
+    outline: none;
+    border: 1px solid gray;
+}
+input::placeholder{
+    color:hsl(270, 3%, 87%);
+}
+.grid{
+    margin-top: 2%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+   
+}
+.form input{
+    margin-top: 1%;
+    border-radius: 5px;
+    padding: 1%;
+    outline: none;
+    border: 1px solid gray;
+    width: 50%;
+}
+.form2 input{
+    margin-top: 1%;
+    border-radius: 5px;
+    padding: 1%;
+    outline: none;
+    border: 1px solid gray;
+    width: 17%;
+}
+input[type=number]{
+    -moz-appearance: textfield;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+.form{
+    width: 50%;
+}
+.submit{
+    margin: 5% 0;
+}
+.submit button{ 
+    color: white;
+    padding: 10px 130px;
+    background-color: hsl(278, 68%, 11%);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+.error-message{
+    font-size: 15px;
+    color: hsl(0, 100%, 66%);
+}
+.completed{
+    text-align: center;
+    width: 100%;
+    display: none;
+    position: absolute;
+    left:20%;
+    top: 25%;
+}
+.text{
+    margin-top: 2%;
+}
+.text h1{
+    color: hsl(278, 68%, 11%);
+    margin-bottom: 1%;
+}
+.text p{
+    margin-bottom: 3%;
+    color:  hsl(279, 6%, 55%);
+}
+.btn-cont .btn-continue{
+    border: none;
+    padding: 20px 150px;
+    border-radius: 15px;
+    color: white;
+    background-color: hsl(278, 68%, 11%);
+}
+@media ( max-width: 790px) {
+    main{
+        display: block;
+        max-width: 100%;
+    }
+    .left-sec{
+        height: 100vh;
+        background: url("/images/bg-main-desktop.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+   
+    .color-container .exp-date{
+        position: absolute;
+        top: 39%;
+        left: 58%;
+        font-size: 1rem;
+    }
+    
+    .bw-container img{
+        position: absolute;
+        top: 55%;
+        left: 20%;
+    }
+    .bw-container .cvc-holder{
+        position: absolute;
+        top: 71.5%;
+        color: white;
+        font-size: 1rem;
+        left: 65%;
+    }
+
+    .right-sec{
+    position: relative;
+    left: 5%;
+    margin-top: 10%;
+    }
+}
+@media (max-width:550px){
+   
+    .color-container img{
+        color: white;
+        top:8%;
+        left: 5%;
+        position: absolute;
+    }
+    
+    .color-container .exp-date{
+        position: absolute;
+        top: 39%;
+        left: 77%;
+        font-size: 1rem;
+    }
+    .color-container .card-num{
+        position: absolute;
+        top: 30%;
+        font-size: 1.5rem;
+        left: 12%;
+    }
+    .color-container .card-name{
+        position: absolute;
+        top: 39%;
+        left: 12%;
+        font-size: 1rem;
+    
+    }
+    .color-container .logo{
+       position: absolute;
+       top: 10%;
+       left: 8%;
+    }
+    
+    
+    .bw-container img{
+        position: absolute;
+        top: 48%;
+        left: 5%;
+    }
+    .bw-container .cvc-holder{
+        position: absolute;
+        top: 64.5%;
+        color: white;
+        font-size: 1rem;
+        left: 75%;
+    }
+}
+@media (max-width:375px) {
+    .completed{
+        text-align: center;
+        width: 100%;
+        display: none;
+        position: absolute;
+        left: 0%;
+        top: 50%;
+    }
+    .attribution{
+        position: fixed;
+        top: 95%;
+    }
+    .text{
+        margin-top: 6%;
+    }
+    .text h1{
+        color: hsl(278, 68%, 11%);
+        margin-bottom: 3%;
+    }
+    .text p{
+        margin-bottom: 10%;
+        color:  hsl(279, 6%, 55%);
+    }
+    .btn-cont .btn-continue{
+        border: none;
+        padding: 20px 100px;
+        border-radius: 15px;
+        color: white;
+        background-color: hsl(278, 68%, 11%);
+    }
+    
+    .color-container img{
+        width: 80%;
+        top: 18.5%;
+        
+        left: 2%;
+        z-index: 1;
+        position: absolute;
+    }
+    .color-container{
+        color: white;
+    }
+    
+    .color-container .exp-date{
+        position: absolute;
+        z-index: 1;
+        top: 37%;
+        left: 60%;
+        font-size: 1rem;
+    }
+    .color-container .card-num{
+        position: absolute;
+        top: 31%;
+        z-index: 1;
+        font-size: 1rem;
+        left: 7%;
+    }
+    .color-container .card-name{
+        position: absolute;
+        top: 37%;
+        left: 7%;
+        z-index: 1;
+        font-size: 1rem;
+    
+    }
+    .color-container .logo{
+       position: absolute;
+       top: 20%;
+       width: 25%;
+       left: 5%;
+       z-index: 1;
+    }
+    .left-sec{
+        height: 50vh;
+        background: url("/images/bg-main-mobile.png");
+        background-repeat: no-repeat;
+    }
+    .bw-container img{
+        position: absolute;
+        top: 5%;
+        left: 19%;
+        width: 80%;
+    }
+    .bw-container .cvc-holder{
+        position: absolute;
+        top: 15%;
+        color: white;
+        font-size: 1rem;
+        left: 80%;
+    }
+    .right-sec{
+        margin-top: -10%;
+        width: 100%;
+    }
+    form {
+        width: 100%;
+    }
+    form label{
+        text-transform: uppercase;
+        color: hsl(278, 68%, 11%);
+    }
+    .form-control{
+        width: 100%;
+        margin: 3% 0;
+    }
+    .form-control input{
+        width: 90%;
+        height: 6vh;
+        border-radius: 5px;
+        padding: 4%;
+        outline: none;
+        border: 1px solid gray;
+    }
+    input::placeholder{
+        color:hsl(270, 3%, 87%);
+       
+    }
+    .grid{
+        margin-top: 2%;
+        width: 90%;
+        display: grid;
+        grid-template-columns: 0.5fr 1fr;
+       
+    }
+    .form input{
+        margin-top: 7%;
+        border-radius: 5px;
+        padding: 1%;
+        height: 5vh;
+        outline: none;
+        border: 1px solid gray;
+        width: 80%;
+    }
+    .form2 input{
+        margin-top: 1%;
+        border-radius: 5px;
+        padding: 1%;
+        margin-left: 40%;
+        height: 5vh;
+        outline: none;
+        border: 1px solid gray;
+        width: 60%;
+    }
+    .form2 label{
+        margin-left: 40%;
+    }
+    input[type=number]{
+        -moz-appearance: textfield;
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button{
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    .submit{
+        margin: 5% 0;
+    }
+    .submit button{ 
+        color: white;
+        padding: 20px 140px;
+        background-color: hsl(278, 68%, 11%);
+        outline: none;
+        border: none;
+        border-radius: 10px;
+    }
+    
+    .input-error-cvc{
+        margin-left: 40% ;
+    }
+    
+}
+@media (max-width:345px) {
+    .color-container .card-name{
+        position: absolute;
+        top: 34%;
+        left: 7%;
+        z-index: 1;
+        font-size: 1rem;
+    
+    }
+    .color-container .card-num{
+        position: absolute;
+        top: 28%;
+        z-index: 1;
+        font-size: 1rem;
+        left: 7%;
+    }
+    .color-container .exp-date{
+        position: absolute;
+        top: 34%;
+        left: 60%;
+        font-size: 1rem;
+    }
+    .bw-container .cvc-holder{
+        position: absolute;
+        top: 14%;
+        color: white;
+        font-size: 1rem;
+        left: 80%;
+    }
+    .submit button{ 
+        color: white;
+        padding: 20px 120px;
+        background-color: hsl(278, 68%, 11%);
+        outline: none;
+        border: none;
+        border-radius: 10px;
+    }
+}
+@media (max-width:328px) {
+    .color-container .card-name{
+        position: absolute;
+        top: 33%;
+        left: 7%;
+        z-index: 1;
+        font-size: 1rem;
+    
+    }
+    .submit button{ 
+        color: white;
+        padding: 20px 100px;
+        background-color: hsl(278, 68%, 11%);
+        outline: none;
+        border: none;
+        border-radius: 10px;
+    }
+    .color-container .card-num{
+        position: absolute;
+        top: 28%;
+        z-index: 1;
+        font-size: 1rem;
+        left: 7%;
+    }
+    .color-container .exp-date{
+        position: absolute;
+        top: 33%;
+        left: 55%;
+        font-size: 1rem;
+    }
+    .bw-container .cvc-holder{
+        position: absolute;
+        top: 13.3%;
+        color: white;
+        font-size: 1rem;
+        left: 80%;
+    }
+}
+@media (max-width:301px) {
+    .color-container .card-name{
+        position: absolute;
+        top: 33%;
+        left: 7%;
+        z-index: 1;
+        font-size: 1rem;
+    
+    }
+    .color-container .card-num{
+        position: absolute;
+        top: 28%;
+        z-index: 1;
+        font-size: 1rem;
+        left: 7%;
+    }
+    .submit button{ 
+        color: white;
+        padding: 20px 90px;
+        background-color: hsl(278, 68%, 11%);
+        outline: none;
+        border: none;
+        border-radius: 10px;
+    }
+    .color-container .exp-date{
+        position: absolute;
+        top: 33%;
+        left: 55%;
+        font-size: 1rem;
+    }
+    .bw-container .cvc-holder{
+        position: absolute;
+        top: 12.2%;
+        color: white;
+        font-size: 1rem;
+        left: 80%;
+    }
+}
+@media (max-width:290px) {
+    .color-container .card-name{
+        position: absolute;
+        top: 31%;
+        left: 7%;
+        z-index: 1;
+        font-size: 1rem;
+    
+    }
+    .submit button{ 
+        color: white;
+        padding: 20px 90px;
+        background-color: hsl(278, 68%, 11%);
+        outline: none;
+        border: none;
+        border-radius: 10px;
+    }
+    .color-container .card-num{
+        position: absolute;
+        top: 26%;
+        z-index: 1;
+        font-size: 1rem;
+        left: 7%;
+    }
+    .color-container .exp-date{
+        position: absolute;
+        top: 31%;
+        left: 55%;
+        font-size: 1rem;
+    }
+    .bw-container .cvc-holder{
+        position: absolute;
+        top: 12.2%;
+        color: white;
+        font-size: 1rem;
+        left: 80%;
+    }
+    .color-container .logo{
+        position: absolute;
+        top: 19%;
+        width: 25%;
+        left: 5%;
+        z-index: 1;
+     }
+}
+@media (max-width:280px) {
+    .bw-container .cvc-holder{
+        position: absolute;
+        top: 11.5%;
+        color: white;
+        font-size: 1rem;
+        left: 80%;
+    }
+}

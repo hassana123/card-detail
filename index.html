@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+  <script src="index.mjs" defer> </script>
+
+  
+</head>
+<body>
+  <main class="main">
+    <section class="left-sec">
+      <div class="color-container">
+        <img src="/images/bg-card-front.png" alt="">
+        <div class="logo">
+          <img src="/images/card-logo.svg" alt="">
+        </div>
+        <div class="card-num">
+          <pre id="print-card-number">0000 0000 0000 0000</pre>
+        </div>
+        <div class="card-name">
+          <pre id="print-card-name">John Doe</pre>
+        </div>
+        <div class="exp-date">
+          <pre  id="print-card-date">000/00</pre>
+        </div>
+      </div>
+      
+  
+      <div class="bw-container">
+        <img src="/images//bg-card-back.png" alt="">
+        <div class="cvc-holder">
+          <pre  id="print-card-cvc">000</pre>
+        </div>
+      </div>
+    </section>
+    <section class="right-sec">
+      <form action="" id="submit">
+        <label for="">cardholder name</label>
+        <div class="form-control">
+          <input id="card-name" type="text" placeholder="e.g. Jane Appleseed">
+          <div>
+            <small class="input-error"></small>
+          </div>
+        </div>
+        <label for="">card number</label>
+        <div class="form-control">
+          <input id="card-number" type="number"  placeholder=" e.g. 1234 5678 9123 0000">
+          <div>
+            <small class="input-error-number"></small>
+          </div>
+        </div>
+        <div class="grid">
+          
+          <div class="form ">
+            <label for="">exp.date(mm/yy)</label><br>
+            <input  id="date" type="month" placeholder="MM">
+            <div>
+              <small class="input-error-date"></small>
+            </div>
+          </div>
+          <div class="form2">
+            <label for="">cvc</label><br>
+            <input  id="cvc" type="number" placeholder=" e.g. 123">
+            <div>
+              <small class="input-error-cvc"></small>
+            </div>
+          </div>
+          
+        </div>
+        <div class="submit">
+          <button  id="submit-btn" type="submit">Confirm</button>
+        </div>
+      </form>
+    </section>
+    <section class="completed">
+      <div class="mark">
+        <img src="/images/icon-complete.svg" alt="">
+      </div>
+      <div class="text">
+        <h1>THANK YOU</h1>
+        <p>We've added your card details</p>
+      </div>
+      <div class="btn-cont">
+        <button class="btn-continue">Continue</button>
+      </div>
+    </section>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Hasssana Abdullahi</a>.
+  </div>
+</body>
+</html>
